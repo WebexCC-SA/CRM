@@ -16,21 +16,14 @@ function copyText(text) {
 </script>
 
 
-## &sect; 1 Introduction
-
-This lab session is an **intermediate level** session intended for engineers with prior **Webex Contact Center** experience and either basic or no knowledge of the Webex Contact Center integration with **Salesforce** customer relationship management (CRM) system.
-
-In this lab session, you will explore the capabilities of the **Legacy Webex Contact Center CRM Connector**  and **New Webex Contact Center CRM Connector** for **Salesforce** that enables you to manage voice interactions while accessing customer information within Salesforce. You will gain hands-on experience with seamless screen pops, activity logging, case management, and other features — all integrated into a streamlined, user-friendly agent interface.
-
-
-	
 !!! info "Task Objectives"
 	- This page has the salesforce versions and external guides.
 	- How to differentiate between the versions 
 	
-## Resource links
+## &sect; 1. Resource links
 
-### Salesforce - Version 1-Legacy  
+
+### &sect; 1.1 Salesforce - Version 1-Legacy  
 
 | <!-- -->                  | <!-- -->         |
 | ------------------------- | ---------------- |
@@ -38,7 +31,7 @@ In this lab session, you will explore the capabilities of the **Legacy Webex Con
 | `Latest Updates`   | <a href="https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce-(Version-1%E2%80%94Legacy)#concept-template_ac93b49e-a5eb-4942-a734-26c8da471aae" target="_blank">https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce-(Version-1%E2%80%94Legacy)#concept-template_ac93b49e-a5eb-4942-a734-26c8da471aae/</a> |
 
 
-### Salesforce - Version 2-New
+### &sect; 1.2 Salesforce - Version 2-New
 
 | <!-- -->                  | <!-- -->         |
 | ------------------------- | ---------------- |
@@ -48,14 +41,14 @@ In this lab session, you will explore the capabilities of the **Legacy Webex Con
 
 
 
-### Differentiate between versions 
+### &sect; 1.3 Differentiate between versions 
 
 | <!-- -->                  | <!-- -->         |
 | ------------------------- | ---------------- |
 | `Guide`             | <a href="https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Playbook-CRM-Connector-Version-Matrix-Install-Store-Link/ta-p/16910365" target="_blank">https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Playbook-CRM-Connector-Version-Matrix-Install-Store-Link/ta-p/16910365/</a> |
 
 
-### Connector Installation Verification
+### &sect; 1.4 Connector Installation Verification
 
 In Salesforce, navigate to **Setup**.
 
