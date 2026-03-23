@@ -47,5 +47,17 @@ In this lab session, you will explore the capabilities of the **Legacy Webex Con
 | `Guide`             | <a href="https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Playbook-CRM-Connector-Version-Matrix-Install-Store-Link/ta-p/16910365" target="_blank">https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Playbook-CRM-Connector-Version-Matrix-Install-Store-Link/ta-p/16910365/</a> |
 
 
+### Connector Installation Verification
+
+In Salesforce, navigate to **Setup**.
+
+In the search box, type **Installed Packages**.
+
+In the Installed Packages list, check for Webex Contact Center.
+
+
+
+
+
 
 
