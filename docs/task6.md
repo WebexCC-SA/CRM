@@ -1,4 +1,13 @@
-# Task 6 - Automatic New Case Creation Using Custom CAD Variables
+---
+icon: material/numeric-2-box-multiple
+icon: material/folder-open-outline
+
+title: Automatic New Case Creation Using Custom CAD Variables
+layout: post
+---
+
+# Automatic New Case Creation Using Custom CAD Variables
+
 
 <script>
 function copyText(text) {
