@@ -31,20 +31,15 @@ Please use the following credentials to complete the tasks:
 	Trial account only expires if its not logged in alteast once in 45 days. 
 
 
-## **Section 1 - Configure Call Center**
+## **Section 1 - Connector Installation**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
 
-- Navigate to Salesforce portal and log in with the credentials provided.
+- Navigate to Salesforce AppExchange portal:  <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N30000008YM3bEAG" target="_blank">https://appexchange.salesforce.com/appxListingDetail?listingId=a0N30000008YM3bEAG/</a> and install the log in and install **Webex Contact Center CTI Connector for Salesforce** by selecting **Get It Now**.
+- You may need to be asked to relogin to complete the above step. 
 
-!!! note
-	The package for the WxCC V2 Salesforce connector is already pre-installed. In production environments, it will need to be installed manually and can be retrieved from <a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl000000VK45IAG" target="_blank">this link</a>.
-
-- Visit the Github repository to download the latest call center definition file - <a href="https://github.com/webex/webex-contact-center-crm-connectors/blob/main/salesforce/OpenCTI.callCenter-meta.xml" target="_blank">https://github.com/webex/webex-contact-center-crm-connectors/blob/main/salesforce/OpenCTI.callCenter-meta.xml</a> (click **'Download raw file button'**).
-
-
-![Nav](./assets/t1s1p1.png){ width="600" }
+![Nav](./assets/task0p1.png){ width="600" }
 
 - In Salesforce, navigate to **'Setup'** by clicking the gear icon in the top-right corner and selecting **'Setup'**.
 
