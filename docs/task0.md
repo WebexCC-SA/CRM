@@ -37,8 +37,5 @@ Please use the following credentials to complete the tasks:
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
 
 - Please use the "integrate" section of the guide for step by step installation  <a href="https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce-(Version-1%E2%80%94Legacy)#Cisco_Task_in_List_GUI.dita_6e0e23f7-7df8-4a52-872a-af63dff16f5c" target="_blank">https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce-(Version-1%E2%80%94Legacy)#Cisco_Task_in_List_GUI.dita_6e0e23f7-7df8-4a52-872a-af63dff16f5c/</a>
-- You may need to be asked to relogin to complete the above step. 
-
-![Nav](./assets/t1s2p4.png){ width="333" }
 
 - Congratulations! You have complete the task.
