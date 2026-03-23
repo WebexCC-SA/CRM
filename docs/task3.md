@@ -31,6 +31,7 @@ Please use the following credentials to complete the tasks:
 	- Enable presence statuses for the appropriate user profile.
 	- Set up Omni-Channel state synchronization in Webex Contact Center settings.
 	- Test state sync between Salesforce Omni-Channel and Webex Contact Center.
+	- The same steps can be used for both Legacy (Version 1) connector or New (Version-2) connector. The screenshots here are shown for New (Version-2) connector
 
 ## **Section 1 - Create Presence Statuses**
 
