@@ -8,8 +8,6 @@ function copyText(text) {
 </script>
 
 	
-Please use the following credentials to complete the tasks:
-
 
 | <!-- -->                  | <!-- -->         |
 | ------------------------- | ---------------- |
