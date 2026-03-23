@@ -39,7 +39,7 @@ Please use the following credentials to complete the tasks:
 	Trial account only expires if its not logged in alteast once in 45 days. 
 
 
-## **Connector Installation**
+## § **Configure Legacy Connector**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
