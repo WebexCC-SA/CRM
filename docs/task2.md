@@ -6,7 +6,7 @@ title: Integrate New Salesforce Connector with WebRTC
 layout: post
 ---
 
-# Task 2 - Integrate New Salesforce Connector with WebRTC
+# Integrate New Salesforce Connector with WebRTC
 
 <script>
 function copyText(text) {
@@ -22,7 +22,7 @@ Please use the following credentials to complete the tasks:
 | <!-- -->                  | <!-- -->         |
 | ------------------------- | ---------------- |
 | `Control Hub`             | <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> |
-| `Salesforce`   | <a href="https://login.salesforce.com" target="_blank">https://login.salesforce.com/</a> |
+| `Salesforce`              | <a href="https://login.salesforce.com" target="_blank">https://login.salesforce.com/</a> |
 
 !!! note
 	Legacy (Version-1) Salesforce connector does not need any additional steps to use WebRTC. 
