@@ -1,4 +1,12 @@
-# Task 0 - Integrate Webex Contact Center with Salesforce Using the Legacy CRM Connector
+---
+icon: material/numeric-2-box-multiple
+icon: material/folder-open-outline
+
+title: Integrate Webex Contact Center with Salesforce Using the Legacy CRM Connector
+layout: post
+---
+
+# Integrate Webex Contact Center with Salesforce Using the Legacy CRM Connector
 
 <script>
 function copyText(text) {
