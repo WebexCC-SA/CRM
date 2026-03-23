@@ -3,8 +3,6 @@ icon: material/numeric-2-box-multiple
 icon: material/folder-open-outline
 
 title: Integrate New Salesforce Connector with WebRTC
-author: Bhushan Suresh, Chandramouli Valithiyanathan, Sara Santos
-date: 2024-10-02
 layout: post
 ---
 
