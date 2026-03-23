@@ -1,4 +1,4 @@
-# Task 2 - Integrate Salesforce Connector with WebRTC
+# Task 2 - Integrate New Salesforce Connector with WebRTC
 
 <script>
 function copyText(text) {
@@ -20,10 +20,11 @@ Please use the following credentials to complete the tasks:
 | `Salesforce Username` | labuser**ID**@wx1.wbx.ai <button onclick="copyText('labuserID@wx1.wbx.ai')">📋</button>  _(where **ID** is your selected pod number (01 through 30); i.e. labuser**02**@wx1.wbx.ai if selected pod is 2)_       |
 | `Salesforce Password` | webexONE1! <button onclick="copyText('webexONE1!')">📋</button> |
 
-
+!!! note
+	Legacy (Version-1) Salesforce connector does not need any additional steps to use WebRTC. 
 
 !!! info "Task Objectives"
-	- Login with WebRTC on Salesforce.
+	- Login with WebRTC on New Salesforce Connector (Version-2).
 	- Troubleshoot and configure the steps needed to enable WebRTC login
 
  
