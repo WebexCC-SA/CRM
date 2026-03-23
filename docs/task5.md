@@ -1,4 +1,12 @@
-# Task 5 - Case Lookup Using Custom CAD Variables and Agent Desktop Screen Pop
+---
+icon: material/numeric-2-box-multiple
+icon: material/folder-open-outline
+
+title: Integrate New Salesforce Connector with WebRTC
+layout: post
+---
+
+# Case Lookup Using Custom CAD Variables and Agent Desktop Screen Pop
 
 <script>
 function copyText(text) {
@@ -15,11 +23,6 @@ Please use the following credentials to complete the tasks:
 | ------------------------- | ---------------- |
 | `Control Hub`             | <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> |
 | `Salesforce`   | <a href="https://login.salesforce.com" target="_blank">https://login.salesforce.com/</a> |
-| `WxCC Username` | labuser**ID**@wx1.wbx.ai <button onclick="copyText('labuserID@wx1.wbx.ai')">📋</button>  _(where **ID** is your selected pod number (01 through 30); i.e. labuser**02**@wx1.wbx.ai if selected pod is 2)_       |
-| `WxCC Password` | webexONE1! <button onclick="copyText('webexONE1!')">📋</button> |
-| `Salesforce Username` | labuser**ID**@wx1.wbx.ai <button onclick="copyText('labuserID@wx1.wbx.ai')">📋</button>  _(where **ID** is your selected pod number (01 through 30); i.e. labuser**02**@wx1.wbx.ai if selected pod is 2)_       |
-| `Salesforce Password` | webexONE1! <button onclick="copyText('webexONE1!')">📋</button> |
-
 
 !!! abstract "Info"
 	In addition to utilizing global variables collected during the customer's interaction in the Webex Contact Center IVR, this task demonstrates the functionality of the new Webex Contact Center CRM widget for Salesforce with screen pops that operate seamlessly without triggering multiple sign-in alert errors.
