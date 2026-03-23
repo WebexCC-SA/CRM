@@ -16,7 +16,7 @@ function copyText(text) {
 </script>
 
 
-## Learning Objectives
+## &sect; 1 Introduction
 
 This lab session is an **intermediate level** session intended for engineers with prior **Webex Contact Center** experience and either basic or no knowledge of the Webex Contact Center integration with **Salesforce** customer relationship management (CRM) system.
 
