@@ -79,10 +79,10 @@ nav:
   - Home: index.md
   - Lab:
       - Overview: Intro.md
-      - Task 0 - Integrate Webex Contact Center with Saleforce Using the Legacy CRM Connector: task0.md
-      - Task 1 - Integrate Webex Contact Center with Saleforce Using the New CRM Connector: task1.md
-      - Task 2 - Integrate Saleforce Connector with WebRTC: task2.md
-      - Task 3 - Presence Synchronization Between Salesforce and Webex Contact Center: task3.md
-      - Task 4 - Data Lookup Using CAD Variables: task4.md
-      - Task 5 - Case Lookup Using Custom CAD Variables and Agent Desktop Screen Pop: task5.md
-      - Task 6 - Automatic New Case Creation Using Custom CAD Variables: task6.md
+      - Integrate Webex Contact Center with Saleforce Using the Legacy CRM Connector: task0.md
+      - Integrate Webex Contact Center with Saleforce Using the New CRM Connector: task1.md
+      - Integrate Saleforce Connector with WebRTC: task2.md
+      - Presence Synchronization Between Salesforce and Webex Contact Center: task3.md
+      - Data Lookup Using CAD Variables: task4.md
+      - Case Lookup Using Custom CAD Variables and Agent Desktop Screen Pop: task5.md
+      - Automatic New Case Creation Using Custom CAD Variables: task6.md
