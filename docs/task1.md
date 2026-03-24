@@ -30,14 +30,14 @@ function copyText(text) {
 	- Add the Webex Contact Center softphone to the Salesforce Sales app.
 	- Test the Webex Contact Center softphone integration in Salesforce.
 
-## §1. **Create Salesforce Trial Account**
+## 1. **Create Salesforce Trial Account**
 - Navigate to Salesforce Developer portal:  <a href="https://www.salesforce.com/products/free-trial/developer" target="_blank">https://www.salesforce.com/products/free-trial/developer/</a> and log in and create an account 
 
 !!! note
 	Trial account only expires if its not logged in alteast once in 45 days. 
 
 
-## §2. **Configure Call Center**
+## 2. **Configure Call Center**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
@@ -86,7 +86,7 @@ function copyText(text) {
 
 
 
-## §3. **Configure Softphone Layout**
+## 3. **Configure Softphone Layout**
 
 - Navigate to **'Feature Settings > Service > Call Center > Softphone Layouts'** (or type _Softphone Layouts_ in the search bar above the left-hand menu).
 - Click **'New'**.
@@ -112,7 +112,7 @@ function copyText(text) {
 
 
 
-## §4. **Configure CTI Softphone**
+## 4. **Configure CTI Softphone**
 
 - Navigate to **'Apps > App Manager'** (or type _App Manager_ in the search bar above the left-hand menu).
 - For the **'Sales'** app (line number 18; **'LightningSales'** developer) click **'Edit'** on the right-hand side.
@@ -133,7 +133,7 @@ function copyText(text) {
 ![Nav](./assets/t1s1p13aa.png){ width="500" }
 
 
-## §4. **Testing**
+## 4. **Testing**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
