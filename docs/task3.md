@@ -36,7 +36,7 @@ Please use the following credentials to complete the tasks:
 	- Test state sync between Salesforce Omni-Channel and Webex Contact Center.
 	- The same steps can be used for both Legacy (Version 1) connector or New (Version-2) connector. The screenshots here are shown for New (Version-2) connector
 
-## **Section 1 - Create Presence Statuses**
+## 1. **Create Presence Statuses**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
@@ -64,7 +64,7 @@ Please use the following credentials to complete the tasks:
 ![Nav](./assets/t2s1p4.png){ width="500" }
 
 
-## **Section 2 - Enable Presence Statuses for the User Profile** 
+## 2. **Enable Presence Statuses for the User Profile** 
 
 - Navigate to **'Users > Profiles'** (or type _Profiles_ in the search bar in the left-hand menu).
 - Locate the **'System Administrator'** profile (select **`Next`** at the bottom to go to the next page) and click on it (do not click **'Edit'**).
@@ -85,7 +85,7 @@ Please use the following credentials to complete the tasks:
 - Click **'Save'**.
 
 
-## **Section 3 - Configure Omni-Channel State Sync in Call Center Settings**
+## 3. **Configure Omni-Channel State Sync in Call Center Settings**
 
 - Navigate to **'Feature Settings > Service > Call Center > Call Centers'** (or type _Call Centers_ in the search bar in the left-hand menu).
 - Click **'Edit'** for **'WxCC Call Center'**.
@@ -111,7 +111,7 @@ Please use the following credentials to complete the tasks:
 
 
 
-## **Section 4 - Testing Omni Sync Presence**
+##  4. **Testing Omni Sync Presence**
 
 
 !!! warning "Attention"
