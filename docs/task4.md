@@ -71,9 +71,10 @@ Phone={ani}
 
 ![Nav](./assets/t3s2p1.png){ width="200" }
 
-- Download and import the flow provided in <a href="https://github.com/WebexCC-SA/CRM/blob/main/docs/assets/CRM_bootcamp_flow.json" target="_blank">this link</a>.
+- Download and import the flow provided in <a href="https://github.com/WebexCC-SA/CRM/blob/main/docs/assets/CRM_bootcamp_flow.json" target="_blank">this link</a> and download the file.
 
-![Nav](./assets/task4_fllow.png){ width="200" }
+![Nav](./assets/task4_fllow.png){ width="300" }
+![Nav](./assets/task4_fllow1.png){ width="300" }
 
 
 
@@ -86,6 +87,9 @@ Phone={ani}
 
 ![Nav](./assets/t3s2p3.png){ width="800" }
 
+- Click on the queue node and enter the queue name that is setup in your sandbox that will route the call to the agent 
+
+![Nav](./assets/task4_flow_2.png){ width="500" }
 
 - Click on an empty space in the flow, then on the right-hand side, scroll down to navigate to **'Custom Variables > Flow Variables'** section.
 - Click on **sfurl** flow variable, select the **'Edit'** option (pencil icon), replace **NN** with the attendee number which is the fully qualified domain name (FQDN) from your Salesforce lab (e.g., _wx1-lab01-dev-ed.develop.lightning.force.com_;) as the Default Value, and click **'Save'**.
