@@ -41,7 +41,7 @@ function copyText(text) {
 - To install the Version 2 package navigate to <a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl000000VK45IAG" target="_blank">this link</a>.
 - Login with the credentials created in step 1 and select **Install for All Users** and select **Install**. 
 
-![Nav](./assets/task1_install.png){ width="600" }
+![Nav](./assets/task1_install.png){ width="400" }
 
 
 ## 3. **Configure Call Center**
