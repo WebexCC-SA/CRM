@@ -33,7 +33,7 @@ Please use the following credentials to complete the tasks:
 	- Test case creation and retrieval in Salesforce via the Webex Contact Center phone widget.
  	- Have the case list open in a new tab during case retrieval.
 
-## **Section 1 - Modifying Call Center Options in Salesforce**
+## 1. **Modifying Call Center Options in Salesforce**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
@@ -54,7 +54,7 @@ Please use the following credentials to complete the tasks:
 ![Nav](./assets/t4s1p1.png){ width="500" }
 
 
-## **Section 2 - Testing**
+## 2. **Testing**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
