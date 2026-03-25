@@ -32,14 +32,14 @@ Please use the following credentials to complete the tasks:
 	- Add the Webex Contact Center softphone to the Salesforce Sales app.
 	- Test the Webex Contact Center softphone integration in Salesforce.
 
-## § **Create Salesforce Trial Account**
+## 1. **Create Salesforce Trial Account**
 - Navigate to Salesforce Developer portal:  <a href="https://www.salesforce.com/products/free-trial/developer" target="_blank">https://www.salesforce.com/products/free-trial/developer/</a> and log in and create an account 
 
 !!! note
 	Trial account only expires if its not logged in alteast once in 45 days. 
 
 
-## § **Configure Legacy Connector**
+## 2. **Configure Legacy Connector**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
