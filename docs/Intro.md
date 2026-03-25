@@ -56,7 +56,7 @@ function copyText(text) {
 
 - In the Salesforce portal, navigate to **Apps > Packagin > Installed Packahges** (or type _Installed Packages_ in the search bar above the left-hand menu).
 
-![Nav](./assets/intro_1.png){ width="350" }
+![Nav](./assets/intro_1.png){ width="600" }
 
 
 
