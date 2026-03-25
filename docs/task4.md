@@ -71,6 +71,12 @@ Phone={ani}
 
 ![Nav](./assets/t3s2p1.png){ width="200" }
 
+- Download and import the flow provided in this link 
+
+![Nav](./assets/task4_fllow.png){ width="200" }
+
+
+
 - Search for the flow named **WX1_Salesforce_LabuserID** _(where **ID** is your selected pod number (01 through 30); i.e. WX1_Salesforce_Labuser02 if selected pod is 2)_ and open the flow by selecting **Go to Flow Designer** by clicking the icon on the right. 
 
 ![Nav](./assets/t3s2p2.png){ width="1000" }
