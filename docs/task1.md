@@ -36,8 +36,15 @@ function copyText(text) {
 !!! note
 	Trial account only expires if its not logged in alteast once in 45 days. 
 
+## 2. **Install the Version 2 package**
 
-## 2. **Configure Call Center**
+- To install the Version 2 package navigate to <a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl000000VK45IAG" target="_blank">this link</a>.
+- Login with the credentials created in step 1 and select **Install for All Users** and select **Install**. 
+
+![Nav](./assets/task1_install.png){ width="600" }
+
+
+## 3. **Configure Call Center**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
@@ -86,7 +93,7 @@ function copyText(text) {
 
 
 
-## 3. **Configure Softphone Layout**
+## 4. **Configure Softphone Layout**
 
 - Navigate to **'Feature Settings > Service > Call Center > Softphone Layouts'** (or type _Softphone Layouts_ in the search bar above the left-hand menu).
 - Click **'New'**.
@@ -112,7 +119,7 @@ function copyText(text) {
 
 
 
-## 4. **Configure CTI Softphone**
+## 5. **Configure CTI Softphone**
 
 - Navigate to **'Apps > App Manager'** (or type _App Manager_ in the search bar above the left-hand menu).
 - For the **'Sales'** app (line number 18; **'LightningSales'** developer) click **'Edit'** on the right-hand side.
@@ -133,7 +140,7 @@ function copyText(text) {
 ![Nav](./assets/t1s1p13aa.png){ width="500" }
 
 
-## 4. **Testing**
+## 6. **Testing**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
