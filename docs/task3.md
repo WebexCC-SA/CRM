@@ -50,6 +50,18 @@ Please use the following credentials to complete the tasks:
 
 ![Nav](./assets/t2s1p1.png){ width="350" }
 
+- Go to **'Feature Settings > Service > Omni-Channel > Omni-Channel Settings'** (or type _Omni-Channel Settings_ in the search bar in the left-hand menu) and enable the below settings highlighted in red and **Save**.
+
+![Nav](./assets/task3_1.png){ width="800" }
+
+- Go to **'Feature Settings > Service > Omni-Channel > Service Channels'** (or type _Service Channels_ in the search bar in the left-hand menu)
+
+![Nav](./assets/task3_2.png){ width="800" }
+
+- Edit 	Service Channel Name Phone and update the **Capacity Settings** to **Status Based** and hit **Save**
+
+![Nav](./assets/task3_3.png){ width="800" }
+
 - Go to **'Feature Settings > Service > Omni-Channel > Presence Statuses'** (or type _Presence Statuses_ in the search bar in the left-hand menu).
 
 ![Nav](./assets/t2s1p2.png){ width="800" }
