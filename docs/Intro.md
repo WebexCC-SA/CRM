@@ -48,16 +48,15 @@ function copyText(text) {
 | `Guide`             | <a href="https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Playbook-CRM-Connector-Version-Matrix-Install-Store-Link/ta-p/16910365" target="_blank">https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Playbook-CRM-Connector-Version-Matrix-Install-Store-Link/ta-p/16910365/</a> |
 
 
-### 4. Connector Installation Verification
+### 4. Installated Package Verification
 
-In Salesforce, navigate to **Setup**.
+- In Salesforce, navigate to **'Setup'** by clicking the gear icon in the top-right corner and selecting **'Setup'**.
 
-In the search box, type **Installed Packages**.
+![Nav](./assets/t2s1p1.png){ width="350" }
 
-In the Installed Packages list, check for Webex Contact Center.
+- In the Salesforce portal, navigate to **Apps > Packagin > Installed Packahges** (or type _Installed Packages_ in the search bar above the left-hand menu).
 
-
-
+![Nav](./assets/intro_1.png){ width="350" }
 
 
 
