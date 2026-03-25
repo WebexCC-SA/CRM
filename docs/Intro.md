@@ -20,10 +20,10 @@ function copyText(text) {
 	- This page has the salesforce versions and external guides.
 	- How to differentiate between the versions 
 	
-## &sect; Resource links
+## Resource links
 
 
-### A. Salesforce - Version 1-Legacy  
+### 1. Salesforce - Version 1-Legacy  
 
 | <!-- -->                  | <!-- -->         |
 | ------------------------- | ---------------- |
@@ -31,7 +31,7 @@ function copyText(text) {
 | `Latest Updates`   | <a href="https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce-(Version-1%E2%80%94Legacy)#concept-template_ac93b49e-a5eb-4942-a734-26c8da471aae" target="_blank">https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce-(Version-1%E2%80%94Legacy)#concept-template_ac93b49e-a5eb-4942-a734-26c8da471aae/</a> |
 
 
-### B. Salesforce - Version 2-New
+### 2. Salesforce - Version 2-New
 
 | <!-- -->                  | <!-- -->         |
 | ------------------------- | ---------------- |
@@ -41,14 +41,14 @@ function copyText(text) {
 
 
 
-### C. Differentiate between versions 
+### 3. Differentiate between versions 
 
 | <!-- -->                  | <!-- -->         |
 | ------------------------- | ---------------- |
 | `Guide`             | <a href="https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Playbook-CRM-Connector-Version-Matrix-Install-Store-Link/ta-p/16910365" target="_blank">https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Playbook-CRM-Connector-Version-Matrix-Install-Store-Link/ta-p/16910365/</a> |
 
 
-### D. Connector Installation Verification
+### 4. Connector Installation Verification
 
 In Salesforce, navigate to **Setup**.
 
