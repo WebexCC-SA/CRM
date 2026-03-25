@@ -32,7 +32,7 @@ Please use the following credentials to complete the tasks:
 	- Troubleshoot and configure the steps needed to enable WebRTC login
 
  
-## **Section 1 - Using WebRTC Option**
+## 1. **Using WebRTC Option**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
@@ -52,7 +52,7 @@ Please use the following credentials to complete the tasks:
 ![Nav](./assets/task2/5.png){ width="400" }
 ![Nav](./assets/task2/5A.png){ width="397" }
 
-## **Section 2 - Steps to Correct and Enable WebRTC Login**
+## 2. **Steps to Correct and Enable WebRTC Login**
 
 - In order to mitigate this issue, in Salesforce, navigate to **'Setup'** by clicking the gear icon in the top-right corner and selecting **'Setup'**.
 
@@ -77,7 +77,7 @@ Please use the following credentials to complete the tasks:
 
 ![Nav](./assets/task2/8.png){ width="700" }
 
-## **Section 3 - Testing**
+## 3. **Testing**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
