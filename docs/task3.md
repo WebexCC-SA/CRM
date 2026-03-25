@@ -52,7 +52,7 @@ Please use the following credentials to complete the tasks:
 
 - Go to **'Feature Settings > Service > Omni-Channel > Omni-Channel Settings'** (or type _Omni-Channel Settings_ in the search bar in the left-hand menu) and enable the below settings highlighted in red and **Save**.
 
-![Nav](./assets/task3_1.png){ width="800" }
+![Nav](./assets/task3_1.png){ width="1000" }
 
 - Go to **'Feature Settings > Service > Omni-Channel > Service Channels'** (or type _Service Channels_ in the search bar in the left-hand menu)
 
