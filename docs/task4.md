@@ -71,7 +71,7 @@ Phone={ani}
 
 ![Nav](./assets/t3s2p1.png){ width="200" }
 
-- Download and import the flow provided in this link 
+- Download and import the flow provided in <a href="https://github.com/WebexCC-SA/CRM/blob/main/docs/assets/CRM_bootcamp_flow.json" target="_blank">this link</a>.
 
 ![Nav](./assets/task4_fllow.png){ width="200" }
 
