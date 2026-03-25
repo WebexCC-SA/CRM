@@ -33,7 +33,7 @@ Please use the following credentials to complete the tasks:
 	- Customize and publish a Webex Contact Center flow with Salesforce integration.
 	- Test the integration by triggering a Salesforce contact creation via a phone call.
 
-## **Section 1 - Salesforce Configuration**
+## 1. **Salesforce Configuration**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
@@ -60,7 +60,7 @@ Phone={ani}
 
 - Click **'Save'**.
 
-## **Section 2 - Webex Contact Center Configuration**
+## 2. **Webex Contact Center Configuration**
 
 - Log in to the <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> using the credentials provided at the top of this page.
 - Click on Contact Center in the left-hand side navigation pane of the Webex Control Hub. 
@@ -73,8 +73,8 @@ Phone={ani}
 
 - Download and import the flow provided in <a href="https://github.com/WebexCC-SA/CRM/blob/main/docs/assets/CRM_bootcamp_flow.json" target="_blank">this link</a> and download the file.
 
-![Nav](./assets/task4_fllow.png){ width="300" }
-![Nav](./assets/task4_fllow1.png){ width="300" }
+![Nav](./assets/task4_fllow.png){ width="500" }
+![Nav](./assets/task4_fllow1.png){ width="500" }
 
 
 
@@ -117,7 +117,7 @@ Phone={ani}
 
 
 
-## **Section 3 - Testing**
+## 3. **Testing**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
