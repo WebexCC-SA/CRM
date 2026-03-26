@@ -90,7 +90,7 @@ Please use the following credentials to complete the tasks:
 
 ![Nav](./assets/t2s1p6.png){ width="800" }
 
-- Move **sfbusy** and **wxccbusy** from **'Available Service Presence Statuses'** to **'Enabled Service Presence Statuses'**.
+- Move **Availble**, **sfbusy** and **wxccbusy** from **'Available Service Presence Statuses'** to **'Enabled Service Presence Statuses'**.
 
 ![Nav](./assets/t2s1p7.png){ width="600" }
 
