@@ -107,11 +107,9 @@ Phone={ani}
 
 ![Nav](./assets/t3s2p7.png){ width="300" }
 
-- Navigate to the **'Channels'** menu in the Webex Contact Center configuration.
+- Navigate to the **'Channels'** menu in the Webex Contact Center configuration and map the flow and the version to a working entrypoint
 
 ![Nav](./assets/t3s2p8.png){ width="200" }
-
-- Open **WebexOne_AI_EntryPoint_ID** (where **'iD'** is your lab user number, e.g., _labuser**07**@wx1.wbx.ai _), verify that your flow is under 'Routing Flow' 
 
 - Note down the **'Support Number'** associated with this channel - it will be needed later in this lab for testing. 
 
