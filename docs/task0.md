@@ -39,6 +39,9 @@ Please use the following credentials to complete the tasks:
 	Trial account only expires if its not logged in alteast once in 45 days. 
 
 
+
+
+
 ## 2. **Configure Legacy Connector**
 
 !!! warning "Attention"
@@ -47,3 +50,28 @@ Please use the following credentials to complete the tasks:
 - Please use the "integrate" section of the guide for step by step installation  <a href="https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce-(Version-1%E2%80%94Legacy)#Cisco_Task_in_List_GUI.dita_6e0e23f7-7df8-4a52-872a-af63dff16f5c" target="_blank">https://help.webex.com/en-us/article/nhxw7kfb/Integrate-Webex-Contact-Center-with-Salesforce-(Version-1%E2%80%94Legacy)#Cisco_Task_in_List_GUI.dita_6e0e23f7-7df8-4a52-872a-af63dff16f5c/</a>
 
 - Congratulations! You have complete the task.
+
+
+## 3. Optional **Update the Salesforce Domain**
+
+To update the domain (to something that you can remember or differentiate) you can follow the below steps 
+
+- In Salesforce, navigate to **'Setup'** by clicking the gear icon in the top-right corner and selecting **'Setup'**.
+
+![Nav](./assets/t2s1p1.png){ width="350" }
+
+- Navigate to **'Compnay Settings > My Domain'** (or type _My Domain_ in the search bar above the left-hand menu) anbd hit **Edit**
+
+![Nav](./assets/task0p2.png){ width="500" }
+
+- Enter the **My Domain Name**, select** Check Availability** and **Save**
+
+![Nav](./assets/task0p3.png){ width="500" }
+
+- Deploy the domain (this steps will take up to 15 mins minutes to complete but you receive an email once complete
+
+
+
+
+
+
