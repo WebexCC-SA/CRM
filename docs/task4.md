@@ -69,7 +69,7 @@ Phone={ani}
 
 - Create 3 Global varibles that are reportable as **caseid**, **description** and **subject**. Similar to below:
 
-![Nav](./assets/t3s2p2.png){ width="500" }
+![Nav](./assets/t3s2p222.png){ width="500" }
 
 - After logging in, navigate to the **'Flows'** menu on the left-hand side.
 
@@ -77,7 +77,7 @@ Phone={ani}
 
 - Download <a href="https://raw.githubusercontent.com/WebexCC-SA/CRM/refs/heads/main/docs/assets/Salesforce_bootcamp_DoNotDelete_Draft.json" target="_blank">this link</a> and save the file by clicking right click and **Save As** a JSON file. Then import the flow provided: 
 
-![Nav](./assets/task4_fllow.png){ width="500" }
+![Nav](./assets/task4_fllow.png){ width="800" }
 
 
 - Search for the flow named **Salesforce_bootcamp_DoNotDelete* and open the flow by selecting **Go to Flow Designer** by clicking the icon on the right. 
