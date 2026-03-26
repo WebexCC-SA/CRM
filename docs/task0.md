@@ -52,7 +52,7 @@ Please use the following credentials to complete the tasks:
 - Congratulations! You have complete the task.
 
 
-## 3. (Optional step} **Update the Salesforce Domain**
+## 3. (Optional step) **Update the Salesforce Domain**
 
 To update the domain (to something that you can remember or differentiate) you can follow the below steps 
 
