@@ -52,7 +52,7 @@ Please use the following credentials to complete the tasks:
 - Congratulations! You have complete the task.
 
 
-## 3. Optional **Update the Salesforce Domain**
+## 3. (Optional step} **Update the Salesforce Domain**
 
 To update the domain (to something that you can remember or differentiate) you can follow the below steps 
 
@@ -62,11 +62,11 @@ To update the domain (to something that you can remember or differentiate) you c
 
 - Navigate to **'Compnay Settings > My Domain'** (or type _My Domain_ in the search bar above the left-hand menu) anbd hit **Edit**
 
-![Nav](./assets/task0p2.png){ width="500" }
+![Nav](./assets/task0p2.png){ width="800" }
 
 - Enter the **My Domain Name**, select** Check Availability** and **Save**
 
-![Nav](./assets/task0p3.png){ width="500" }
+![Nav](./assets/task0p3.png){ width="800" }
 
 - Deploy the domain (this steps will take up to 15 mins minutes to complete but you receive an email once complete
 
