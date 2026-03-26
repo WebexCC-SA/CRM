@@ -137,6 +137,10 @@ Please use the following credentials to complete the tasks:
 
 ![Nav](./assets/task3_5..png){ width="400" }
 
+!!! note
+	Please make sure that the idle code is added to the desktop profile under **'Idle/Wrap-up Codes'**
+
+
 
 ##  5. **Testing Omni Sync Presence**
 
