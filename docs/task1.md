@@ -51,7 +51,7 @@ function copyText(text) {
 
 - Navigate to Salesforce portal and log in with the credentials provided.
 
-- Visit the Github repository to download the latest call center definition file - <a href="https://github.com/webex/webex-contact-center-crm-connectors/blob/main/salesforce/OpenCTI.callCenter-meta.xml" target="_blank">https://github.com/webex/webex-contact-center-crm-connectors/blob/main/salesforce/OpenCTI.callCenter-meta.xml</a> (click **'Download raw file button'**).
+- Visit the Github repository to download the latest call center definition file - <a href="https://github.com/webex/webex-contact-center-crm-connectors/blob/main/salesforce/cti/OpenCTI.callCenter-meta.xml" target="_blank">https://github.com/webex/webex-contact-center-crm-connectors/blob/main/salesforce/cti/OpenCTI.callCenter-meta.xml</a> (click **'Download raw file button'**).
 
 
 ![Nav](./assets/t1s1p1.png){ width="600" }
