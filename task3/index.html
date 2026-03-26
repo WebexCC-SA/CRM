@@ -1,0 +1,1095 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Building Webex Contact Center connectors: Configuration and Troubleshooting">
+      
+      
+        <meta name="author" content="Anuj Bhatia, D.K Singh, Bhushan Suresh">
+      
+      
+      
+        <link rel="prev" href="../task2/">
+      
+      
+        <link rel="next" href="../task4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../template_assets/cisco_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Integrate New Salesforce Connector with WebRTC - Building Webex Contact Center connectors: Configuration and Troubleshooting</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#presence-synchronization-between-salesforce-and-webex-contact-center" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Building Webex Contact Center connectors: Configuration and Troubleshooting" class="md-header__button md-logo" aria-label="Building Webex Contact Center connectors: Configuration and Troubleshooting" data-md-component="logo">
+      
+  <img src="../template_assets/cisco_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Webex Contact Center connectors: Configuration and Troubleshooting
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Integrate New Salesforce Connector with WebRTC
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lab
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Building Webex Contact Center connectors: Configuration and Troubleshooting" class="md-nav__button md-logo" aria-label="Building Webex Contact Center connectors: Configuration and Troubleshooting" data-md-component="logo">
+      
+  <img src="../template_assets/cisco_logo.png" alt="logo">
+
+    </a>
+    Building Webex Contact Center connectors: Configuration and Troubleshooting
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lab
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intro/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.1 10 4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5zM19 18H6l1.6-6h13z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task0/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.1 10 4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5zM19 18H6l1.6-6h13z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrate Webex Contact Center with Saleforce Using the Legacy CRM Connector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task1/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.1 10 4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5zM19 18H6l1.6-6h13z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrate Webex Contact Center with Saleforce Using the New CRM Connector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task2/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.1 10 4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5zM19 18H6l1.6-6h13z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrate Saleforce Connector with WebRTC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.1 10 4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5zM19 18H6l1.6-6h13z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Presence Synchronization Between Salesforce and Webex Contact Center
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.1 10 4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5zM19 18H6l1.6-6h13z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Presence Synchronization Between Salesforce and Webex Contact Center
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1-create-presence-statuses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Create Presence Statuses
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-enable-presence-statuses-for-the-user-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Enable Presence Statuses for the User Profile
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-configure-omni-channel-state-sync-in-call-center-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Configure Omni-Channel State Sync in Call Center Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-webex-contact-center-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Webex Contact Center Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-testing-omni-sync-presence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Testing Omni Sync Presence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-troubleshooting-failed-sync-due-to-mismatched-idle-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Troubleshooting Failed Sync Due to Mismatched Idle Codes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task4/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.1 10 4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5zM19 18H6l1.6-6h13z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Lookup Using CAD Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task5/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.1 10 4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5zM19 18H6l1.6-6h13z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Lookup Using Custom CAD Variables and Agent Desktop Screen Pop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task6/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.1 10 4 18V8h17a2 2 0 0 0-2-2h-7l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15c.9 0 1.7-.6 1.9-1.5l2.3-8.5zM19 18H6l1.6-6h13z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Automatic New Case Creation Using Custom CAD Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="presence-synchronization-between-salesforce-and-webex-contact-center">Presence Synchronization Between Salesforce and Webex Contact Center</h1>
+<script>
+function copyText(text) {
+  navigator.clipboard.writeText(text);
+  alert("Copied: " + text);
+}
+</script>
+
+<p>Please use the following credentials to complete the tasks:</p>
+<table>
+<thead>
+<tr>
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Control Hub</code></td>
+<td><a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a></td>
+</tr>
+<tr>
+<td><code>Salesforce</code></td>
+<td><a href="https://login.salesforce.com" target="_blank">https://login.salesforce.com/</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition abstract">
+<p class="admonition-title">Info</p>
+<p>Presence is crucial for agent productivity, especially when handling multiple contacts across different platforms. 
+This task focuses on achieving presence synchronization between Webex Contact Center and Salesforce to ensure agents are utilized efficiently.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Task Objectives</p>
+<ul>
+<li>Configure Salesforce presence statuses to match Webex Contact Center idle codes.</li>
+<li>Enable presence statuses for the appropriate user profile.</li>
+<li>Set up Omni-Channel state synchronization in Webex Contact Center settings.</li>
+<li>Test state sync between Salesforce Omni-Channel and Webex Contact Center.</li>
+<li>The same steps can be used for both Legacy (Version 1) connector or New (Version-2) connector. The screenshots here are shown for New (Version-2) connector</li>
+</ul>
+</div>
+<h2 id="1-create-presence-statuses">1. <strong>Create Presence Statuses</strong></h2>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>Please use the <strong>Firefox</strong> browser to access, configure, and test within the Salesforce portal.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For presence synchronization to work between Salesforce and Webex Contact Center, the idle code names in Webex Contact Center must match the presence state names in Salesforce.</p>
+</div>
+<ul>
+<li>In Salesforce, navigate to <strong>'Setup'</strong> by clicking the gear icon in the top-right corner and selecting <strong>'Setup'</strong>.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s1p1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s1p1.png" width="350"></a></p>
+<ul>
+<li>Go to <strong>'Feature Settings &gt; Service &gt; Omni-Channel &gt; Omni-Channel Settings'</strong> (or type <em>Omni-Channel Settings</em> in the search bar in the left-hand menu) and enable the below settings highlighted in red and <strong>Save</strong>.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task3_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task3_1.png" width="1000"></a></p>
+<ul>
+<li>Go to <strong>'Feature Settings &gt; Service &gt; Omni-Channel &gt; Service Channels'</strong> (or type <em>Service Channels</em> in the search bar in the left-hand menu)</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task3_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task3_2.png" width="800"></a></p>
+<ul>
+<li>Edit  Service Channel Name Phone and update the <strong>Capacity Settings</strong> to <strong>Status Based</strong> and hit <strong>Save</strong></li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task3_3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task3_3.png" width="800"></a></p>
+<ul>
+<li>Go to <strong>'Feature Settings &gt; Service &gt; Omni-Channel &gt; Presence Statuses'</strong> (or type <em>Presence Statuses</em> in the search bar in the left-hand menu).</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s1p2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s1p2.png" width="800"></a></p>
+<ul>
+<li>Create  two new <strong>Presence Statuses</strong>:<ul>
+<li>Click <strong>'New'</strong>.</li>
+<li>Provide the name <strong>wxccbusy</strong> under <strong>'Status Name'</strong> and select <strong>'Busy'</strong> under <strong>'Status Options'</strong>.</li>
+<li>Click <strong>'Save'</strong> and select <strong>`Back to List: Service Presence Statuses'</strong></li>
+<li>Create another <strong>Presence Status</strong> with the same options but use <strong>sfbusy</strong> under <strong>'Status Name'</strong>.</li>
+</ul>
+</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s1p3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s1p3.png" width="500"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s1p4.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s1p4.png" width="500"></a></p>
+<h2 id="2-enable-presence-statuses-for-the-user-profile">2. <strong>Enable Presence Statuses for the User Profile</strong></h2>
+<ul>
+<li>Navigate to <strong>'Users &gt; Profiles'</strong> (or type <em>Profiles</em> in the search bar in the left-hand menu).</li>
+<li>Locate the <strong>'System Administrator'</strong> profile (select <strong><code>Next</code></strong> at the bottom to go to the next page) and click on it (do not click <strong>'Edit'</strong>).</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the purpose of this exercise, the <strong>'System Administrator'</strong> profile is used. Under normal circumstances, any other profile may be used by users.</p>
+</div>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s1p5.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s1p5.png" width="800"></a></p>
+<ul>
+<li>In the next window, hover over <strong>'Enabled Service Presence Status Access'</strong> and click <strong>'Edit'</strong>.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s1p6.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s1p6.png" width="800"></a></p>
+<ul>
+<li>Move <strong>Availble</strong>, <strong>sfbusy</strong> and <strong>wxccbusy</strong> from <strong>'Available Service Presence Statuses'</strong> to <strong>'Enabled Service Presence Statuses'</strong>.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s1p7.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s1p7.png" width="600"></a></p>
+<ul>
+<li>Click <strong>'Save'</strong>.</li>
+</ul>
+<h2 id="3-configure-omni-channel-state-sync-in-call-center-settings">3. <strong>Configure Omni-Channel State Sync in Call Center Settings</strong></h2>
+<ul>
+<li>Navigate to <strong>'Feature Settings &gt; Service &gt; Call Center &gt; Call Centers'</strong> (or type <em>Call Centers</em> in the search bar in the left-hand menu).</li>
+<li>Click <strong>'Edit'</strong> for <strong>'WxCC Call Center'</strong>.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s3p1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s3p1.png" width="800"></a></p>
+<ul>
+<li>Under <strong>'Omni-Channel State Sync Configuration'</strong>, do the following:<ul>
+<li>Set <strong>'Enable Omni-Channel Sync'</strong> to <strong>true</strong> (type it in manually).</li>
+<li>For <strong>'Omni-Channel Not Ready Reason'</strong>, type <strong>wxccbusy</strong>.</li>
+<li>For <strong>'WxCC Idle Reason Code'</strong>, type <strong>sfbusy</strong>.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>'Omni-Channel Not Ready Reason'</strong> is the name of the Salesforce Omni-Channel "Busy" reason status used when the agent receives an inbound call in Webex Contact Center.
+<strong>'WxCC Idle Reason Code'</strong> is the name of the Webex Contact Center Idle code used when the agent receives an inbound chat in Salesforce.</p>
+</div>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s3p2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s3p2.png" width="500"></a></p>
+<ul>
+<li>Click <strong>'Save'</strong>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the purpose of this lab, the idle code <strong>sfbusy</strong> has already been created on the Webex Contact Center side.</p>
+</div>
+<h2 id="4-webex-contact-center-configuration">4. <strong>Webex Contact Center Configuration</strong></h2>
+<ul>
+<li>Log in to the <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> using the credentials provided at the top of this page.</li>
+<li>Click on Contact Center in the left-hand side navigation pane of the Webex Control Hub. </li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t3s2p1aa.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t3s2p1aa.png" width="500"></a></p>
+<ul>
+<li>After logging in, navigate to the <strong>'Idle/Wrap-up Codes'</strong> menu on the left-hand side and select Create an <strong>Idle/Wrap-up Codes</strong></li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task3_4.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task3_4.png" width="400"></a></p>
+<ul>
+<li>Create an idle code <strong>sfbusy</strong> and select <strong>Create</strong></li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task3_5.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task3_5.png" width="400"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please make sure that the idle code is added to the desktop profile under <strong>'Idle/Wrap-up Codes'</strong></p>
+</div>
+<h2 id="5-testing-omni-sync-presence">5. <strong>Testing Omni Sync Presence</strong></h2>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>Please use the <strong>Firefox</strong> browser to access, configure, and test within the Salesforce portal.</p>
+</div>
+<ul>
+<li>Refresh Salesforce by logging out and logging back in (<strong>make sure to close any other Salesforce tabs</strong>).</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s4p1a.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s4p1a.png" width="500"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Reminder</p>
+<p>Please select the <strong>'Desktop'</strong> option for the phone number.</p>
+</div>
+<ul>
+<li>Open the Webex Contact Center widget (<strong>Phone</strong>) and change the states (e.g., <em>sfbusy</em>, <em>available</em>) — the Salesforce <strong>Omni-Channel</strong> widget status should follow accordingly.</li>
+<li>Test changing the state from the Salesforce <strong>Omni-Channel</strong> widget — the Webex Contact Center widget should follow as well.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>'Omni-Channel Not Ready Reason'</strong> is the name of the Salesforce Omni-Channel "Busy" reason status used when the agent receives an inbound call in Webex Contact Center. Therefore, the <strong>wxccbusy</strong> state on the Omni-Channel widget will only appear when an agent is actively engaged in a Webex Contact Center call (this will be tested in the next tasks)</p>
+</div>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s4p2a.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s4p2a.png" width="333"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s4p2b.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s4p2b.png" width="347"></a></p>
+<ul>
+<li>Congratulations! You have completed the task.</li>
+</ul>
+<h2 id="6-troubleshooting-failed-sync-due-to-mismatched-idle-codes">6. Troubleshooting Failed Sync Due to Mismatched Idle Codes</h2>
+<ul>
+<li>In Salesforce, navigate to <strong>'Setup'</strong> by clicking the gear icon in the top-right corner and selecting <strong>'Setup'</strong>.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s1p1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s1p1.png" width="350"></a></p>
+<ul>
+<li>
+<p>Go to <strong>'Feature Settings &gt; Service &gt; Omni-Channel &gt; Presence Statuses'</strong> (or type <em>Presence Statuses</em> in the search bar in the left-hand menu).</p>
+</li>
+<li>
+<p>Select <strong>'Edit'</strong> the Presence Status <strong>sfbusy</strong> created before </p>
+</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t3s41p1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t3s41p1.png" width="700"></a></p>
+<ul>
+<li>Update <strong>sfbusy</strong> to <strong>Sfbusy</strong> (capitalizing the letter S) and click <strong>'Save'</strong>.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t3s41p2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t3s41p2.png" width="700"></a></p>
+<ul>
+<li>Refresh Salesforce by logging out and logging back in (<strong>make sure to close any other Salesforce tabs</strong>).</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t2s4p1a.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t2s4p1a.png" width="500"></a></p>
+<ul>
+<li>Open the Webex Contact Center widget (<strong>Phone</strong>) and change the states to <strong>'Available'</strong> — the Salesforce <strong>Omni-Channel</strong> widget status will be changed to <strong>'Available'</strong></li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t3s41p3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t3s41p3.png" width="400"></a></p>
+<ul>
+<li>Test changing the state from the Salesforce <strong>Omni-Channel</strong> widget to <strong>Sfbusy</strong> and notice thatthe Webex Contact Center widget still shows as  <strong>'Available'</strong></li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/t3s41p4.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/t3s41p4.png" width="400"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Reason</p>
+<p>When presence status on <strong>sfbusy</strong> is updated to <strong>Sfbusy</strong>, presence sync becasue idle code on WxCC is <strong>sfbusy</strong>. 
+Omni-channel codes created on Salesforce and in Webex Contact Center needs to match in spelling and in case. 
+Please refer to the <a href="https://help.webex.com/en-us/article/dyidod/Integrate-Webex-Contact-Center-with-Salesforce-(Version-2-New)#reference-template_2cf241c7-ade1-49d6-9582-b38467cb85f4"><em>Omni-Channel State Sync Configuration</em></a> section for the external documentation  </p>
+</div>
+<ul>
+<li>Congratulations! You have completed the task.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../task2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Integrate Saleforce Connector with WebRTC">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Integrate Saleforce Connector with WebRTC
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../task4/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Lookup Using CAD Variables">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Data Lookup Using CAD Variables
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
