@@ -33,7 +33,7 @@ function copyText(text) {
 	- Set up CAD variable field mapping for auto case creation in the Salesforce Call Center settings.
  	- Test the auto case creation and CAD variable field mapping.
 
-## **Section 1 - Modifying Call Center Options in Salesforce**
+## 1. **Modifying Call Center Options in Salesforce**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
@@ -56,7 +56,7 @@ Subject={subject},Description={description}
 ![Nav](./assets/t5s1p3.png){ width="700" }
 
 
-## **Section 2 - Testing**
+## 2. **Testing**
 
 !!! warning "Attention"
 	Please use the **Firefox** browser to access, configure, and test within the Salesforce portal.
