@@ -71,14 +71,13 @@ Phone={ani}
 
 ![Nav](./assets/t3s2p1.png){ width="200" }
 
-- Download and import the flow provided in <a href="https://github.com/WebexCC-SA/CRM/blob/main/docs/assets/CRM_bootcamp_flow.json" target="_blank">this link</a> and download the file.
+- Download <a href="https://raw.githubusercontent.com/WebexCC-SA/CRM/refs/heads/main/docs/assets/Salesforce_bootcamp_DoNotDelete_Draft.json" target="_blank">this link</a> and save the file by clicking right click and **Save As** a JSON file. Then import the flow provided: 
 
 ![Nav](./assets/task4_fllow.png){ width="500" }
-![Nav](./assets/task4_fllow1.png){ width="500" }
 
 
 
-- Search for the flow named **WX1_Salesforce_LabuserID** _(where **ID** is your selected pod number (01 through 30); i.e. WX1_Salesforce_Labuser02 if selected pod is 2)_ and open the flow by selecting **Go to Flow Designer** by clicking the icon on the right. 
+- Search for the flow named **Salesforce_bootcamp_DoNotDelete* and open the flow by selecting **Go to Flow Designer** by clicking the icon on the right. 
 
 ![Nav](./assets/t3s2p2.png){ width="1000" }
 
