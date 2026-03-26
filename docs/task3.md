@@ -121,9 +121,24 @@ Please use the following credentials to complete the tasks:
 	For the purpose of this lab, the idle code **sfbusy** has already been created on the Webex Contact Center side.
 
 
+##  4. **Webex Contact Center Configuration**
+
+- Log in to the <a href="https://admin.webex.com" target="_blank">https://admin.webex.com</a> using the credentials provided at the top of this page.
+- Click on Contact Center in the left-hand side navigation pane of the Webex Control Hub. 
+
+![Nav](./assets/t3s2p1aa.png){ width="500" }
+
+- After logging in, navigate to the **'Idle/Wrap-up Codes'** menu on the left-hand side and select Create an **Idle/Wrap-up Codes**
+
+![Nav](./assets/task3_4..png){ width="400" }
 
 
-##  4. **Testing Omni Sync Presence**
+- Create an idle code **sfbusy** and select **Create**
+
+![Nav](./assets/task3_5..png){ width="400" }
+
+
+##  5. **Testing Omni Sync Presence**
 
 
 !!! warning "Attention"
