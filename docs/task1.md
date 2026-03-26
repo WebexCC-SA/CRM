@@ -119,7 +119,7 @@ function copyText(text) {
 ## 5. **Configure CTI Softphone**
 
 - Navigate to **'Apps > App Manager'** (or type _App Manager_ in the search bar above the left-hand menu).
-- For the **'Sales'** app (line number 18; **'LightningSales'** developer) click **'Edit'** on the right-hand side.
+- For the **'Sales'** app (line number 22; **'LightningSales'** developer) click **'Edit'** on the right-hand side.
 
 ![Nav](./assets/t1s1p11.png){ width="1100" }
 
@@ -147,13 +147,13 @@ function copyText(text) {
 
 ![Nav](./assets/t1s2p1.png){ width="400" }
 
-- Open the Webex Contact Center phone widget (bottom left) and login to Webex Contact Center Agent Desktop using the selected Webex Contact Center user credentials (e.g., _labuser**ID**@wx1.wbx.ai_):
+- Open the Webex Contact Center phone widget (bottom left) and login to Webex Contact Center Agent Desktop using the Webex Contact Center user credentials
   	- First time login into agent desktop could prompt you the OAuth2 Consent as shown in the first screenshot below. Hit **Accept** to continue
 
 	![Nav](./assets/t1s2p2a.png){ width="400" }
 
 	
-	- For the phone number, select **'Extension'** and enter the extension in the format 10**NN** (where **'NN'** is your lab user number, e.g., _labuser**ID**@wx1.wbx.ai_)':
+	- For the phone number, select **'Extension'** and enter the extension or dial number (but not **Desktop** option):
 	- For the team use **Salesforce Team**. 
 	
 ![Nav](./assets/t1s2p2.png){ width="333" }
