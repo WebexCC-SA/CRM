@@ -69,7 +69,7 @@ Phone={ani}
 
 - Create 3 Global varibles that are reportable as **caseid**, **description** and **subject**. Similar to below:
 
-![Nav](./assets/t3s2p222.png){ width="500" }
+![Nav](./assets/t3s2p222.png){ width="800" }
 
 - After logging in, navigate to the **'Flows'** menu on the left-hand side.
 
