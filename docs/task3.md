@@ -130,12 +130,12 @@ Please use the following credentials to complete the tasks:
 
 - After logging in, navigate to the **'Idle/Wrap-up Codes'** menu on the left-hand side and select Create an **Idle/Wrap-up Codes**
 
-![Nav](./assets/task3_4..png){ width="400" }
+![Nav](./assets/task3_4.png){ width="400" }
 
 
 - Create an idle code **sfbusy** and select **Create**
 
-![Nav](./assets/task3_5..png){ width="400" }
+![Nav](./assets/task3_5.png){ width="400" }
 
 !!! note
 	Please make sure that the idle code is added to the desktop profile under **'Idle/Wrap-up Codes'**
