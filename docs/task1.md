@@ -154,7 +154,7 @@ function copyText(text) {
 
 	
 	- For the phone number, select **'Extension'** and enter the extension or dial number (but not **Desktop** option):
-	- For the team use **Salesforce Team**. 
+	- For the team use the team from your Sandbox. 
 	
 ![Nav](./assets/t1s2p2.png){ width="333" }
 ![Nav](./assets/t1s2p3a.png){ width="326" }
