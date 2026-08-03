@@ -67,7 +67,7 @@ Phone={ani}
 
 ![Nav](./assets/t3s2p1aa.png){ width="500" }
 
-- Create 3 Global varibles that are reportable as **caseid**, **description** and **subject**. Similar to below:
+- Create 3 Global varibles that are reportable and Agent Viewable as **caseid**, **description** and **subject**. Similar to below:
 
 ![Nav](./assets/t3s2p222.png){ width="800" }
 
