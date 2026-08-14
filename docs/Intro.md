@@ -71,6 +71,6 @@ function copyText(text) {
 
 - Within **Control Hub** > **Troubleshooting** > **Logs** - enter the impacted agents email ID or the **Feedback ID** that was provided in the previous step and download the redux logs 
 
-![Nav](./assets/t2s1p111223.png){ width="350" }
+![Nav](./assets/t2s1p111223.png){ width="500" }
 
 
