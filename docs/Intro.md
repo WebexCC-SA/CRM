@@ -73,6 +73,5 @@ function copyText(text) {
 
 ![Nav](./assets/t2s1p111223.png){ width="1000" }
 
-- Once downloaded you can upload this on the redux tool locally (How to install redux tool - <a href="[https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl000000VK45IAG](https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Install-and-Use-Redux-Tool-on-the-Browser/ta-p/16109857)" target="_blank">this link</a>
-
+- Once downloaded you can upload this on the redux tool locally (How to install redux tool - <a href="https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Install-and-Use-Redux-Tool-on-the-Browser/ta-p/16109857#toc-hId--918411386" target="_blank">this link</a>.
 ![Nav](./assets/t2s1p1112234.png){ width="500" }
