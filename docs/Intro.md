@@ -71,6 +71,8 @@ function copyText(text) {
 
 - Within **Control Hub** > **Troubleshooting** > **Logs** - enter the impacted agents email ID or the **Feedback ID** that was provided in the previous step and download the redux logs 
 
-![Nav](./assets/t2s1p111223.png){ width="500" }
+![Nav](./assets/t2s1p111223.png){ width="750" }
 
+- Once downloaded you can upload this on the redux tool locally (How to install redux tool - steps https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Install-and-Use-Redux-Tool-on-the-Browser/ta-p/16109857
 
+![Nav](./assets/t2s1p1112234.png){ width="500" }
