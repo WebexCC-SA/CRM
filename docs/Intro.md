@@ -65,11 +65,11 @@ function copyText(text) {
 
 ![Nav](./assets/t2s1p111.png){ width="350" }
 
-- Once they hit the button a feedback ID is generated and we can ask customers to save the ID and provide or if they can note the time the option was selected
+- Once they hit the button a **Feedback ID** is generated and we can ask customers to save the ID and provide or if they can note the time the option was selected
 
 ![Nav](./assets/t2s1p11122.png){ width="350" }
 
-- Within Control Hub > Troubleshooting > Logs - enter the impacted agents email ID or the Feedback ID that was provided in the previous step and download the redux logs 
+- Within **Control Hub** > **Troubleshooting** > **Logs** - enter the impacted agents email ID or the **Feedback ID** that was provided in the previous step and download the redux logs 
 
 ![Nav](./assets/t2s1p111223.png){ width="350" }
 
