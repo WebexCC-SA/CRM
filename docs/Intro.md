@@ -48,7 +48,7 @@ function copyText(text) {
 | `Guide`             | <a href="https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Playbook-CRM-Connector-Version-Matrix-Install-Store-Link/ta-p/16910365" target="_blank">https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Playbook-CRM-Connector-Version-Matrix-Install-Store-Link/ta-p/16910365/</a> |
 
 
-### 4. Installated Package Verification
+### 4. Installed Package Verification
 
 - In Salesforce, navigate to **'Setup'** by clicking the gear icon in the top-right corner and selecting **'Setup'**.
 
@@ -59,5 +59,18 @@ function copyText(text) {
 ![Nav](./assets/intro_1.png){ width="1000" }
 
 
+### 5. Helping Customers Gather Redux Logs for New CRM Connector 
+
+- In Salesforce, Agent desktop widget select the avatar icon on top right and hit **Upload logs**
+
+![Nav](./assets/t2s1p111.png){ width="350" }
+
+- Once they hit the button a feedback ID is generated and we can ask customers to save the ID and provide or if they can note the time the option was selected
+
+![Nav](./assets/t2s1p11122.png){ width="350" }
+
+- Within Control Hub > Troubleshooting > Logs - enter the impacted agents email ID or the Feedback ID that was provided in the previous step and download the redux logs 
+
+![Nav](./assets/t2s1p111223.png){ width="350" }
 
 
