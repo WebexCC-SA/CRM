@@ -74,7 +74,7 @@ function copyText(text) {
 ![Nav](./assets/t2s1p111223.png){ width="1000" }
 
 - Once downloaded you can upload this on the redux tool parser tool view the logs: <a href="https://scripts.cisco.com/ui/use/redux_parser" target="_blank">https://scripts.cisco.com/ui/use/redux_parser</a>   
-![Nav](./assets/t2s1p1112234_scv.png){ width="750" }
+![Nav](./assets/t2s1p1112234_scv.png){ width="500" }
 
 
 
@@ -107,4 +107,4 @@ function copyText(text) {
 
 - Once downloaded you can upload this on the redux tool parser tool view the logs: <a href="https://scripts.cisco.com/ui/use/redux_parser" target="_blank">https://scripts.cisco.com/ui/use/redux_parser</a>   
 
-![Nav](./assets/t2s1p1112234_scv.png){ width="750" }
+![Nav](./assets/t2s1p1112234_scv.png){ width="500" }
