@@ -59,7 +59,7 @@ function copyText(text) {
 ![Nav](./assets/intro_1.png){ width="1000" }
 
 
-### 5. Helping Customers Gather Redux Logs for New CRM Connector 
+### 5. Helping Customers Gather Redux Logs for New (v2) CRM Connector 
 
 - In Salesforce, Agent desktop widget select the avatar icon on top right and hit **Upload logs**
 
@@ -73,5 +73,38 @@ function copyText(text) {
 
 ![Nav](./assets/t2s1p111223.png){ width="1000" }
 
-- Once downloaded you can upload this on the redux tool locally (How to install redux tool - <a href="https://techzone.cisco.com/t5/Contact-Center-3rd-Party/Install-and-Use-Redux-Tool-on-the-Browser/ta-p/16109857#toc-hId--918411386" target="_blank">this link)</a>.
-![Nav](./assets/t2s1p1112234.png){ width="750" }
+- Once downloaded you can upload this on the redux tool parser tool view the logs: https://scripts.cisco.com/ui/use/redux_parser
+![Nav](./assets/t2s1p1112234_scv.png){ width="750" }
+
+
+
+### 6. Helping Customers Gather Redux Logs for Service Cloud Voice (SCV) 
+
+- In Salesforce, navigate to **'Setup'** by clicking the gear icon in the top-right corner and selecting **'Setup'**.
+
+![Nav](./assets/t2s1p1.png){ width="350" }
+
+- In the Salesforce portal, navigate to **Apps > Packagin > Installed Packahges** (or type _Installed Packages_ in the search bar above the left-hand menu).
+- The Package name should be **Webex Contact Center for Service Cloud Voice** indicating its SCV and **Version Number** needs to be **1.3** (lower version will not have the ability to gather logs this way)
+
+![Nav](./assets/intro_12.png){ width="1000" }
+
+- In Salesforce, Agent desktop widget select the gear icon 
+
+![Nav](./assets/t2s1p1111.png){ width="350" }
+
+- Scroll down to the bottom and select **Upload logs** 
+
+![Nav](./assets/t2s1p11122_scv.png){ width="350" }
+
+- Once you hit the button, the file will be downloaded and also a **Feedback ID** generated 
+
+![Nav](./assets/t2s1p11122333_scv.png){ width="350" }
+
+- Within **Control Hub** > **Troubleshooting** > **Logs** - enter the impacted agents email ID or the **Feedback ID** that was provided in the previous step and download the redux logs 
+
+![Nav](./assets/t2s1p111223.png){ width="1000" }
+
+- Once downloaded you can upload this on the redux tool parser tool view the logs: https://scripts.cisco.com/ui/use/redux_parser
+
+![Nav](./assets/t2s1p1112234_scv.png){ width="750" }
