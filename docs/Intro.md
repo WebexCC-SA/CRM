@@ -79,8 +79,10 @@ function copyText(text) {
 ![Nav](./assets/t2s1p1.png){ width="250" }
 
 - In the Salesforce portal, navigate to **Apps > Packagin > Installed Packahges** (or type _Installed Packages_ in the search bar above the left-hand menu).
-- The Package name should be **Webex Contact Center for Service Cloud Voice** indicating its SCV and **Version Number** needs to be **1.3** or higher (the following steps are not available for versions lower than 1.3)
-![Nav](./assets/intro_12.png){ width="1250" }
+
+!!! warning "Attention"
+	The Package name should be **Webex Contact Center for Service Cloud Voice** indicating its SCV and **Version Number** needs to be **1.3** or higher (the following steps are not available for versions lower than 1.3)
+	![Nav](./assets/intro_12.png){ width="1250" }
 
 - In Salesforce, Agent desktop widget select the gear icon on the top right (Note: Please make sure the agent is signed in under the **Phone** tab)
 ![Nav](./assets/t2s1p1111.png){ width="250" }
