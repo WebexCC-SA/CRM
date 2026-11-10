@@ -73,7 +73,7 @@ function copyText(text) {
 
 ![Nav](./assets/t2s1p111223.png){ width="1000" }
 
-- Once downloaded you can upload this on the redux tool parser tool view the logs: https://scripts.cisco.com/ui/use/redux_parser
+- Once downloaded you can upload this on the redux tool parser tool view the logs: <a href="https://scripts.cisco.com/ui/use/redux_parser" target="_blank">https://scripts.cisco.com/ui/use/redux_parser</a>   
 ![Nav](./assets/t2s1p1112234_scv.png){ width="750" }
 
 
@@ -87,7 +87,7 @@ function copyText(text) {
 - In the Salesforce portal, navigate to **Apps > Packagin > Installed Packahges** (or type _Installed Packages_ in the search bar above the left-hand menu).
 - The Package name should be **Webex Contact Center for Service Cloud Voice** indicating its SCV and **Version Number** needs to be **1.3** (lower version will not have the ability to gather logs this way)
 
-![Nav](./assets/intro_12.png){ width="1000" }
+![Nav](./assets/intro_12.png){ width="750" }
 
 - In Salesforce, Agent desktop widget select the gear icon 
 
@@ -105,6 +105,6 @@ function copyText(text) {
 
 ![Nav](./assets/t2s1p111223.png){ width="1000" }
 
-- Once downloaded you can upload this on the redux tool parser tool view the logs: https://scripts.cisco.com/ui/use/redux_parser
+- Once downloaded you can upload this on the redux tool parser tool view the logs: <a href="https://scripts.cisco.com/ui/use/redux_parser" target="_blank">https://scripts.cisco.com/ui/use/redux_parser</a>   
 
 ![Nav](./assets/t2s1p1112234_scv.png){ width="750" }
