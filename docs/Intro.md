@@ -87,7 +87,7 @@ function copyText(text) {
 - In the Salesforce portal, navigate to **Apps > Packagin > Installed Packahges** (or type _Installed Packages_ in the search bar above the left-hand menu).
 - The Package name should be **Webex Contact Center for Service Cloud Voice** indicating its SCV and **Version Number** needs to be **1.3** (lower version will not have the ability to gather logs this way)
 
-![Nav](./assets/intro_12.png){ width="1000" }
+![Nav](./assets/intro_12.png){ width="1250" }
 
 - In Salesforce, Agent desktop widget select the gear icon on the top right (Note: Please make sure the agent is signed in under the **Phone** tab)
 
@@ -95,11 +95,11 @@ function copyText(text) {
 
 - Scroll down to the bottom and select **Upload logs** (Note: Please make sure the agent is signed in under the **Phone** tab first. If not, the this step will fail with _Error: Log file failed to save. Error: Webex Core is not initialized._)
 
-![Nav](./assets/t2s1p11122_scv.png){ width="350" }
+![Nav](./assets/t2s1p11122_scv.png){ width="250" }
 
 - Once you hit the button, the file will be downloaded and also a **Feedback ID** generated 
 
-![Nav](./assets/t2s1p11122333_scv.png){ width="350" }
+![Nav](./assets/t2s1p11122333_scv.png){ width="1000" }
 
 - Within **Control Hub** > **Troubleshooting** > **Logs** - enter the impacted agents email ID or the **Feedback ID** that was provided in the previous step and download the redux logs 
 
